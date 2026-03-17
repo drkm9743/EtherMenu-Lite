@@ -10,7 +10,7 @@
 
 **EtherMenu Lite** is a free, open-source cheat menu written in Java (API) and Lua (GUI) for **Project Zomboid Build 42** (42.15.2+).
 
-> Fork of [EtherMenu](https://github.com/Jenya705/EtherMenu) by Quzile, ported and maintained by **DRKM43**.
+> Fork of [EtherHack](https://github.com/Jenya705/EtherMenu) by Quzile, ported and maintained by **DRKM43**.
 
 A **Full Edition** with additional tabs (Item Creator, Exploit & Bypass) is available via our Discord.
 
