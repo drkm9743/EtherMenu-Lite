@@ -133,6 +133,28 @@ After installation, launch the game normally.
 - Press **`Insert`** to open the cheat menu
 - Press **`Home`** to reload the Lua GUI
 
+## A note on the full version paywall
+
+I'm a hardcore open source believer. Genuinely. This lite version being public
+is not a marketing stunt — it's my default position on software.
+
+So why is there a paid full edition at all? Honest answer: my laptop barely
+runs the game, I'm unemployed, and keeping this maintained has a real cost in
+time and hardware. The paywall isn't greed, it's survival. The moment my
+situation stabilizes, the full edition goes open source, no conditions, no
+exceptions. I'm not building a business here.
+
+On the longevity of this project: I play PZ multiplayer every day. I genuinely
+love this game and the community around it. As long as the devs keep shipping
+updates without real server-side anticheat, I'll keep updating this — it's a
+cat and mouse game I enjoy playing. And before anyone says it: yes, I want the
+devs to eventually implement proper anticheat. Good anticheat means a better
+game for everyone. Until then, this exists.
+
+TL;DR — temporarily freemium by necessity, permanently open source by
+conviction. If you want to support development and speed up the "full open
+source" timeline, Discord is linked above.
+
 ## Disclaimer
 
 This software is provided for educational and single-player use only. Use on multiplayer servers may violate server rules and result in bans. **Use at your own risk.**
