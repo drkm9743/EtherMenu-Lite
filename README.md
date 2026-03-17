@@ -13,6 +13,7 @@
 > Fork of [EtherMenu](https://github.com/Jenya705/EtherMenu) by Quzile, ported and maintained by **DRKM43**.
 
 A **Full Edition** with additional tabs (Item Creator, Exploit & Bypass) is available via our Discord.
+https://discord.com/invite/3NUKPZKZdy 
 
 ## Community
 
