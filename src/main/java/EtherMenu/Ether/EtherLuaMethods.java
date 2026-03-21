@@ -1267,9 +1267,29 @@ public class EtherLuaMethods {
       return instance;
    }
 
+   @LuaMethod(name = "getMenuKeyID", global = true)
+   public static int getMenuKeyID() {
+      return EtherMain.getInstance().etherAPI.menuKeyID;
+   }
+
+   @LuaMethod(name = "setMenuKeyID", global = true)
+   public static void setMenuKeyID(int keyID) {
+      EtherMain.getInstance().etherAPI.menuKeyID = keyID;
+   }
+
+   @LuaMethod(name = "getKeyName", global = true)
+   public static String getKeyName(int keyID) {
+      try {
+         String name = org.lwjglx.input.Keyboard.getKeyName(keyID);
+         if (name != null && !name.isEmpty()) return name;
+      } catch (Exception ignored) {}
+      return "Key " + keyID;
+   }
+
    @LuaMethod(name = "setMenuLanguage", global = true)
    public static void setMenuLanguage(String lang) {
       EtherMain.getInstance().etherTranslator.setOverrideLanguage(lang);
+      EtherMain.getInstance().etherAPI.menuLanguage = lang;
    }
 
    @LuaMethod(name = "getMenuLanguage", global = true)

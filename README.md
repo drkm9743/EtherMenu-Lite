@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Game-Project%20Zomboid%20Build%2042-blue" alt="PZ Build 42">
   <img src="https://img.shields.io/badge/Java-25-green" alt="Java 25">
-  <img src="https://img.shields.io/badge/Version-1.0.5-orange" alt="Version 1.0.5">
+  <img src="https://img.shields.io/badge/Version-1.0.6-orange" alt="Version 1.0.6">
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License">
   <img src="https://img.shields.io/badge/Edition-Lite%20(Free)-brightgreen" alt="Lite Edition">
 </p>
@@ -107,7 +107,7 @@ export JAVA_HOME=/path/to/jdk-17
 ./gradlew jar -Pjdk25Home=/path/to/jdk-25
 ```
 
-The built JAR will be at `build/EtherMenu-1.0.5-lite.jar`.
+The built JAR will be at `build/EtherMenu-1.0.6-lite.jar`.
 
 ## Installation
 
@@ -115,7 +115,7 @@ The built JAR will be at `build/EtherMenu-1.0.5-lite.jar`.
 
 2. Open a terminal in the game folder and run:
 ```bash
-java -jar EtherMenu-1.0.5-lite.jar --install
+java -jar EtherMenu-1.0.6-lite.jar --install
 ```
 
 > **Important:** Use JDK 25 (matching your PZ installation) to run the installer.
@@ -123,14 +123,14 @@ java -jar EtherMenu-1.0.5-lite.jar --install
 ## Uninstallation
 
 ```bash
-java -jar EtherMenu-1.0.5-lite.jar --uninstall
+java -jar EtherMenu-1.0.6-lite.jar --uninstall
 ```
 
 ## Usage
 
 After installation, launch the game normally.
 
-- Press **`Insert`** to open the cheat menu
+- Press **`F1`** to open the cheat menu (configurable in Settings)
 - Press **`Home`** to reload the Lua GUI
 
 ## A note on the full version paywall

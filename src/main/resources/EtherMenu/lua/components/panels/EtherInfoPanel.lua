@@ -101,13 +101,7 @@ function EtherInfoPanel:render()
 
     y = y + marginTitle
 
-    self:drawTextCentered(getTranslate("UI_InformationPanel_Contact_Discord"), y, 0.5, 0.8, 1.0, 1.0, UIFont.Small)
-    y = y + marginText
-    self:drawTextCentered("discord.gg/3NUKPZKZdy", y, 0.4, 0.6, 0.9, 1.0, UIFont.Small)
-    y = y + marginText + 5
-    self:drawTextCentered(getTranslate("UI_InformationPanel_Contact_Patreon"), y, 0.5, 0.8, 1.0, 1.0, UIFont.Small)
-    y = y + marginText
-    self:drawTextCentered("patreon.com/EtherMenu", y, 0.4, 0.6, 0.9, 1.0, UIFont.Small)
+    self:drawTextCentered("github.com/drkm9743/EtherMenu-Lite", y, 0.4, 0.6, 0.9, 1.0, UIFont.Small)
 
     y = y + marginText
 end

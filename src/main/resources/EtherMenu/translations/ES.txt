@@ -220,4 +220,6 @@
     UI_Settings_PlayersColor = "Color para renderizado de elementos de jugadores",
     UI_Settings_ZombiesColor = "Color para renderizado de elementos de zombis",
     UI_Settings_LanguageLabel = "Idioma del menú",
+    UI_Settings_MenuKeyLabel = "Tecla para abrir el menú",
+    UI_Settings_MenuKeyListening = "Pulsa cualquier tecla...",
 }

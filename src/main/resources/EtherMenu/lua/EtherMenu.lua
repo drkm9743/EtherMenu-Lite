@@ -38,7 +38,7 @@ end
 --*********************************************************
 EtherMain                   = ISPanel:derive("EtherMain"); -- Наследование от ISPanel
 EtherMain.instance          = nil; --Экземпляр окна
-EtherMain.menuKeyID         = 210; -- Клавиша открытия окна - Insert (210)
+EtherMain.menuKeyID         = getMenuKeyID(); -- Клавиша открытия окна - F1 (59)
 EtherMain.defaultWidth      = 510; -- Стандартная ширина окна
 EtherMain.defaultHeight     = 500; -- Стандартная высота окна
 EtherMain.currentTabID      = 1; -- Последняя открытая вкладка

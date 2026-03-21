@@ -312,6 +312,7 @@ function EtherSettingsPanel:createChildren()
     self.langCombo = ISComboBox:new(self:getWidth() - 130 - 10, langY, 130, 20, self, function(target, combo)
         local selected = combo:getOptionText(combo.selected);
         setMenuLanguage(selected);
+        saveConfig("startup");
     end)
     self.langCombo:initialise();
     self.langCombo:instantiate();
@@ -322,6 +323,33 @@ function EtherSettingsPanel:createChildren()
     self:addChild(self.langCombo);
     self:setScrollHeight(self:getScrollHeight() + 25);
     self.rows = self.rows + 1;
+
+    -- Menu key binding
+    local keyY = 200 + self.rows * 25;
+    self:addLabel(10, keyY - 3, getTranslate("UI_Settings_MenuKeyLabel"))
+
+    self.keyBindButton = UIButton:new(self:getWidth() - 130 - 10, keyY, 130, 20, getKeyName(EtherMain.menuKeyID), function ()
+        if self.isListeningForKey then return end
+        self.isListeningForKey = true;
+        self.keyBindButton.title = getTranslate("UI_Settings_MenuKeyListening");
+        self.keyPressHandler = function(key)
+            self.isListeningForKey = false;
+            Events.OnKeyPressed.Remove(self.keyPressHandler);
+            EtherMain.menuKeyID = key;
+            setMenuKeyID(key);
+            saveConfig("startup");
+            if self.keyBindButton then
+                self.keyBindButton.title = getKeyName(key);
+            end
+        end
+        Events.OnKeyPressed.Add(self.keyPressHandler);
+    end)
+    self.keyBindButton:initialise();
+    self.keyBindButton:instantiate();
+    self:addChild(self.keyBindButton);
+    self:setScrollHeight(self:getScrollHeight() + 25);
+    self.rows = self.rows + 1;
+    self.isListeningForKey = false;
 
     self:addButtonWithLabel(getTranslate("UI_Settings_ResetLuaLabel"), getTranslate("UI_Settings_ResetLuaButton"), function ()
         getCore():ResetLua("default", "Force")

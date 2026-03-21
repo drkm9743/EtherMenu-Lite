@@ -203,6 +203,8 @@ public class EtherAPI {
    public boolean isMapDrawAllPlayers;
    public boolean isMapDrawVehicles;
    public boolean isMapDrawZombies;
+   public int menuKeyID = 59;
+   public String menuLanguage = "";
 
    public void saveConfig(String var1) {
       String var2 = "EtherMenu/config/" + var1 + ".properties";
@@ -263,6 +265,8 @@ public class EtherAPI {
       var3.setProperty("isMapDrawAllPlayers", Boolean.toString(this.isMapDrawAllPlayers));
       var3.setProperty("isMapDrawVehicles", Boolean.toString(this.isMapDrawVehicles));
       var3.setProperty("isMapDrawZombies", Boolean.toString(this.isMapDrawZombies));
+      var3.setProperty("menuKeyID", Integer.toString(this.menuKeyID));
+      var3.setProperty("menuLanguage", this.menuLanguage);
 
       try {
          FileOutputStream var4 = new FileOutputStream(var2);
@@ -365,6 +369,11 @@ public class EtherAPI {
       this.isMapDrawAllPlayers = ConfigUtils.getBooleanFromConfig(var3, "isMapDrawAllPlayers", false);
       this.isMapDrawVehicles = ConfigUtils.getBooleanFromConfig(var3, "isMapDrawVehicles", false);
       this.isMapDrawZombies = ConfigUtils.getBooleanFromConfig(var3, "isMapDrawZombies", false);
+      this.menuKeyID = ConfigUtils.getIntFromConfig(var3, "menuKeyID", 59);
+      this.menuLanguage = var3.getProperty("menuLanguage", "");
+      if (!this.menuLanguage.isEmpty()) {
+         EtherMain.getInstance().etherTranslator.setOverrideLanguage(this.menuLanguage);
+      }
    }
 
    private void initStartupConfig() {
@@ -444,6 +453,11 @@ public class EtherAPI {
       this.isMapDrawAllPlayers = ConfigUtils.getBooleanFromConfig(var1, "isMapDrawAllPlayers", false);
       this.isMapDrawVehicles = ConfigUtils.getBooleanFromConfig(var1, "isMapDrawVehicles", false);
       this.isMapDrawZombies = ConfigUtils.getBooleanFromConfig(var1, "isMapDrawZombies", false);
+      this.menuKeyID = ConfigUtils.getIntFromConfig(var1, "menuKeyID", 59);
+      this.menuLanguage = var1.getProperty("menuLanguage", "");
+      if (!this.menuLanguage.isEmpty()) {
+         EtherMain.getInstance().etherTranslator.setOverrideLanguage(this.menuLanguage);
+      }
    }
 
    public EtherAPI() {

@@ -220,4 +220,6 @@
     UI_Settings_PlayersColor = "Color for rendering players UI elements",
     UI_Settings_ZombiesColor = "Color for rendering zombies UI elements",
     UI_Settings_LanguageLabel = "Menu language",
+    UI_Settings_MenuKeyLabel = "Menu toggle key",
+    UI_Settings_MenuKeyListening = "Press any key...",
 }
