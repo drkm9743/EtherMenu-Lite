@@ -39,6 +39,15 @@ dependencies {
     implementation(files("lib/org.jar"))
 }
 
+// ASM-only configuration (no game JARs — they're read from projectzomboid.jar at runtime)
+val asmOnly: Configuration by configurations.creating {
+    isCanBeResolved = true
+}
+dependencies {
+    asmOnly("org.ow2.asm:asm:9.9.1")
+    asmOnly("org.ow2.asm:asm-tree:9.9.1")
+}
+
 tasks.named<Jar>("jar") {
     destinationDirectory.set(project.file("build"))
     archiveFileName.set("EtherMenu-${version}-lite.jar")
@@ -49,16 +58,8 @@ tasks.named<Jar>("jar") {
 
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
-    from(configurations.runtimeClasspath.get().map { file ->
-        if (file.isDirectory) {
-            file
-        } else {
-            zipTree(file)
-        }
-    }) {
-        // Exclude game classes - the patcher reads them from projectzomboid.jar at runtime
-        exclude("zombie/**")
-        exclude("fmod/**")
-        exclude("se/**")
-    }
+    // Only bundle ASM — game libraries are on the classpath at runtime
+    from(asmOnly.map { file ->
+        if (file.isDirectory) file else zipTree(file)
+    })
 }
