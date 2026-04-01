@@ -1,7 +1,7 @@
 @echo off
-title EtherMenu Lite - Install
+title EtherMenu - Install
 echo ============================================
-echo   EtherMenu Lite v1.0.6 - Installer
+echo   EtherMenu v1.0.6 - Installer
 echo ============================================
 echo.
 

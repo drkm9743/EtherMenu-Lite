@@ -1,4 +1,4 @@
-{
+﻿{
 	UI_InformationPanel_General_Title = "عام",
 	UI_InformationPanel_General_Text1 = "هذا الغش يوسع بشكل كبير وظائف اللعبة،",
 	UI_InformationPanel_General_Text2 = "مما قد يتم اكتشافه بواسطة أنظمة مكافحة الغش. لذلك بعض الوظائف",
@@ -21,8 +21,6 @@
 	UI_InformationPanel_AntiCheatStatus_Disable = "معطّل",
 
 	UI_InformationPanel_Contact_Title = "التواصل والدعم",
-	UI_InformationPanel_Contact_Discord = "Discord:",
-	UI_InformationPanel_Contact_Patreon = "Patreon:",
 
 	UI_CharacterPanel_MultiHitZombies = "ضربة متعددة على الزومبي",
 	UI_CharacterPanel_ZombieDontAttack = "الزومبي لا يهاجمون اللاعب",

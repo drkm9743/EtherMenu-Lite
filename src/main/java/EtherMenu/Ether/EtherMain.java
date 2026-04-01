@@ -18,7 +18,7 @@ public class EtherMain {
          this.licenseManager = LicenseManager.getInstance();
          this.licenseManager.init();
       } catch (NoClassDefFoundError e) {
-         Logger.printLog("Running in Lite edition");
+         Logger.printLog("License module not available");
       }
       this.etherTranslator = new EtherTranslator();
       this.etherTranslator.loadTranslations();
@@ -27,7 +27,7 @@ public class EtherMain {
       this.etherLuaManager = new EtherLuaManager();
       this.etherLuaManager.loadLua();
       Logger.printLog("Initialization EtherMenu was completed!");
-      Logger.printLog("Edition: " + (this.licenseManager != null && this.licenseManager.isLicensed() ? "FULL VERSION" : "LITE VERSION"));
+      Logger.printLog("Edition: " + (this.licenseManager != null && this.licenseManager.isLicensed() ? "LICENSED" : "COMMUNITY"));
    }
 
    public static EtherMain getInstance() {

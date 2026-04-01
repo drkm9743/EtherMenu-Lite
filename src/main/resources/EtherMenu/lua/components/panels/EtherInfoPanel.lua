@@ -97,11 +97,7 @@ function EtherInfoPanel:render()
 
     y = y + marginText
 
-    self:drawTextCentered(getTranslate("UI_InformationPanel_Contact_Title"), y, 1, 1, 1, 1, UIFont.Medium)
-
-    y = y + marginTitle
-
-    self:drawTextCentered("github.com/drkm9743/EtherMenu-Lite", y, 0.4, 0.6, 0.9, 1.0, UIFont.Small)
+    self:drawTextCentered("EtherMenu", y, 0.5, 0.8, 1.0, 1.0, UIFont.Medium)
 
     y = y + marginText
 end

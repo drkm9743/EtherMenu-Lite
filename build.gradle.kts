@@ -55,5 +55,10 @@ tasks.named<Jar>("jar") {
         } else {
             zipTree(file)
         }
-    })
+    }) {
+        // Exclude game classes - the patcher reads them from projectzomboid.jar at runtime
+        exclude("zombie/**")
+        exclude("fmod/**")
+        exclude("se/**")
+    }
 }

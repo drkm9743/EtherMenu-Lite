@@ -1,4 +1,4 @@
-{
+﻿{
 	UI_InformationPanel_General_Title = "Allgemein",
 	UI_InformationPanel_General_Text1 = "Dieser Cheat erweitert die Funktionalität des Spiels erheblich,",
 	UI_InformationPanel_General_Text2 = "was von Anti-Cheat-Systemen erkannt werden kann. Daher funktionieren einige Funktionen",
@@ -21,8 +21,6 @@
 	UI_InformationPanel_AntiCheatStatus_Disable = "Deaktiviert",
 
 	UI_InformationPanel_Contact_Title = "Kontakt & Support",
-	UI_InformationPanel_Contact_Discord = "Discord:",
-	UI_InformationPanel_Contact_Patreon = "Patreon:",
 
 	UI_CharacterPanel_MultiHitZombies = "Mehrfachtreffer auf Zombies",
 	UI_CharacterPanel_ZombieDontAttack = "Zombies greifen den Spieler nicht an",

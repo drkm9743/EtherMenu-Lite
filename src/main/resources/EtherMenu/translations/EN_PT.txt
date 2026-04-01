@@ -1,4 +1,4 @@
-{
+﻿{
 	UI_InformationPanel_General_Title = "Captain's Log",
 	UI_InformationPanel_General_Text1 = "This here plunder greatly expands th' game's rigging,",
 	UI_InformationPanel_General_Text2 = "which can be spotted by them anti-cheat scallywags. So some tricks",
@@ -21,8 +21,6 @@
 	UI_InformationPanel_AntiCheatStatus_Disable = "Nay!",
 
 	UI_InformationPanel_Contact_Title = "Signal Flags & Parley",
-	UI_InformationPanel_Contact_Discord = "Discord:",
-	UI_InformationPanel_Contact_Patreon = "Patreon:",
 
 	UI_CharacterPanel_MultiHitZombies = "Broadside th' undead",
 	UI_CharacterPanel_ZombieDontAttack = "Zombies be fearin' ye",

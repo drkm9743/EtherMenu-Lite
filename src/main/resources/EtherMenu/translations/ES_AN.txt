@@ -1,4 +1,4 @@
-{
+﻿{
 	UI_InformationPanel_General_Title = "Informasión Generá",
 	UI_InformationPanel_General_Text1 = "Este truco amplía de lo lindo la funcionalidá der juego,",
 	UI_InformationPanel_General_Text2 = "lo cuá puede sé detectao por los anti-trampas. Asín que argunas funciones",
@@ -21,8 +21,6 @@
 	UI_InformationPanel_AntiCheatStatus_Disable = "Quitao",
 
 	UI_InformationPanel_Contact_Title = "Contacto y eso",
-	UI_InformationPanel_Contact_Discord = "Discord:",
-	UI_InformationPanel_Contact_Patreon = "Patreon:",
 
 	UI_CharacterPanel_MultiHitZombies = "Darle a varios zombis a la vé",
 	UI_CharacterPanel_ZombieDontAttack = "Que los zombis no te toquen",

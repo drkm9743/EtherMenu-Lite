@@ -1,7 +1,7 @@
 @echo off
-title EtherMenu Lite - Uninstall
+title EtherMenu - Uninstall
 echo ============================================
-echo   EtherMenu Lite v1.0.6 - Uninstaller
+echo   EtherMenu v1.0.6 - Uninstaller
 echo ============================================
 echo.
 

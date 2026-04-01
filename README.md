@@ -1,23 +1,15 @@
-<h1 align="center">EtherMenu Lite</h1>
+<h1 align="center">EtherMenu</h1>
 <img src="demo/EtherLogo.png" alt="EtherMenu Logo">
 <p align="center">
   <img src="https://img.shields.io/badge/Game-Project%20Zomboid%20Build%2042-blue" alt="PZ Build 42">
   <img src="https://img.shields.io/badge/Java-25-green" alt="Java 25">
   <img src="https://img.shields.io/badge/Version-1.0.6-orange" alt="Version 1.0.6">
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License">
-  <img src="https://img.shields.io/badge/Edition-Lite%20(Free)-brightgreen" alt="Lite Edition">
 </p>
 
-**EtherMenu Lite** is a free, open-source cheat menu written in Java (API) and Lua (GUI) for **Project Zomboid Build 42** (42.15.2+).
+**EtherMenu** is a free, open-source cheat menu written in Java (API) and Lua (GUI) for **Project Zomboid Build 42** (42.16.0+).
 
 > Fork of [EtherHack](https://github.com/Yeet-Masta/Project-Zomboid-EtherHack) by Quzile and Yeet-Masta, ported and maintained by **DRKM43**.
-
-A **Full Edition** with additional tabs (Item Creator, Exploit & Bypass) is available via our Discord.
-
-## Community
-
-- **Discord:** [discord.gg/3NUKPZKZdy](https://discord.gg/3NUKPZKZdy)
-- **Patreon:** [patreon.com/EtherMenu](https://www.patreon.com/EtherMenu)
 
 ## Table of Contents
 - [Features](#features)
@@ -109,6 +101,8 @@ export JAVA_HOME=/path/to/jdk-17
 
 The built JAR will be at `build/EtherMenu-1.0.6-lite.jar`.
 
+> **Note:** The JAR includes an installer/uninstaller. Game classes are read from `projectzomboid.jar` at runtime, so it stays compatible across PZ updates.
+
 ## Installation
 
 1. Copy the built JAR to your Project Zomboid game folder.
@@ -119,6 +113,8 @@ java -jar EtherMenu-1.0.6-lite.jar --install
 ```
 
 > **Important:** Use JDK 25 (matching your PZ installation) to run the installer.
+
+> **Compatibility:** Tested with PZ Build 42.16.0. The patcher reads game classes at install time, so it's automatically compatible with minor PZ updates.
 
 ## Uninstallation
 
@@ -132,28 +128,6 @@ After installation, launch the game normally.
 
 - Press **`F1`** to open the cheat menu (configurable in Settings)
 - Press **`Home`** to reload the Lua GUI
-
-## A note on the full version paywall
-
-I'm a hardcore open source believer. Genuinely. This lite version being public
-is not a marketing stunt — it's my default position on software.
-
-So why is there a paid full edition at all? Honest answer: my laptop barely
-runs the game, I'm unemployed, and keeping this maintained has a real cost in
-time and hardware. The paywall isn't greed, it's survival. The moment my
-situation stabilizes, the full edition goes open source, no conditions, no
-exceptions. I'm not building a business here.
-
-On the longevity of this project: I play PZ multiplayer every day. I genuinely
-love this game and the community around it. As long as the devs keep shipping
-updates without real server-side anticheat, I'll keep updating this — it's a
-cat and mouse game I enjoy playing. And before anyone says it: yes, I want the
-devs to eventually implement proper anticheat. Good anticheat means a better
-game for everyone. Until then, this exists.
-
-TL;DR — temporarily freemium by necessity, permanently open source by
-conviction. If you want to support development and speed up the "full open
-source" timeline, Discord is linked above.
 
 ## Disclaimer
 

@@ -1,4 +1,4 @@
-{
+﻿{
  UI_InformationPanel_General_Title = "Общие сведения",
  UI_InformationPanel_General_Text1 = "Этот чит значительно расширяет функционал игры,",
  UI_InformationPanel_General_Text2 = "Это может быть обнаружено античитами. Поэтому некоторые функции",
@@ -20,8 +20,6 @@
  UI_InformationPanel_AntiCheatStatus_Enable = "Включено",
  UI_InformationPanel_AntiCheatStatus_Disable = "Отключено",
  UI_InformationPanel_Contact_Title = "Контакты и поддержка",
- UI_InformationPanel_Contact_Discord = "Discord: ",
- UI_InformationPanel_Contact_Patreon = "Patreon: ",
 
  UI_CharacterPanel_MultiHitZombies = "Мультиудар по зомби",
  UI_CharacterPanel_ZombieDontAttack = "Зомби не нападают на игрока",

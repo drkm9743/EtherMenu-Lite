@@ -1,4 +1,4 @@
-{
+﻿{
 	UI_InformationPanel_General_Title = "概览",
 	UI_InformationPanel_General_Text1 = "此作弊工具大幅扩展了游戏功能，",
 	UI_InformationPanel_General_Text2 = "可能会被反作弊系统检测到。因此，某些功能",
@@ -21,8 +21,6 @@
 	UI_InformationPanel_AntiCheatStatus_Disable = "已禁用",
 
 	UI_InformationPanel_Contact_Title = "联系与支持",
-	UI_InformationPanel_Contact_Discord = "Discord：",
-	UI_InformationPanel_Contact_Patreon = "Patreon：",
 
 	UI_CharacterPanel_MultiHitZombies = "多目标攻击僵尸",
 	UI_CharacterPanel_ZombieDontAttack = "僵尸不攻击玩家",

@@ -1,4 +1,4 @@
-{
+﻿{
 	UI_InformationPanel_General_Title = "概要",
 	UI_InformationPanel_General_Text1 = "このチートはゲームの機能を大幅に拡張しますが、",
 	UI_InformationPanel_General_Text2 = "アンチチートシステムによって検出される可能性があります。そのため一部の機能は",
@@ -21,8 +21,6 @@
 	UI_InformationPanel_AntiCheatStatus_Disable = "無効",
 
 	UI_InformationPanel_Contact_Title = "連絡先とサポート",
-	UI_InformationPanel_Contact_Discord = "Discord：",
-	UI_InformationPanel_Contact_Patreon = "Patreon：",
 
 	UI_CharacterPanel_MultiHitZombies = "ゾンビへの複数ヒット",
 	UI_CharacterPanel_ZombieDontAttack = "ゾンビがプレイヤーを攻撃しない",
